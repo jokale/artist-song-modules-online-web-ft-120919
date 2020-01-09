@@ -10,7 +10,9 @@ class Song
  
   
   # ::ClassMethods
-extend Memorable include Paramable
+extend Memorable
+
+include Paramable
   @@songs = []
 
   def initialize
