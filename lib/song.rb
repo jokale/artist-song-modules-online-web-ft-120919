@@ -7,10 +7,10 @@ class Song
   attr_accessor :name
   attr_reader :artist
   
-  include Paramable
+ 
   
   # ::ClassMethods
-extend Memorable
+extend Memorable include Paramable
   @@songs = []
 
   def initialize
